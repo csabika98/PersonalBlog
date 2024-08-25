@@ -17,19 +17,31 @@
 ## Screenshots
 
 ## 1. screen - Welcome page
-<img src="src/Screenshots/8.png" alt="welcome_page" width="1248" height="375"/>
+<img src="src/Screenshots/13.png" alt="welcome_page"/>
 
-## 2. screen - Post view
-<img src="src/Screenshots/9.png" alt="post_creation" width="1248" height="375"/>
+## 2. screen - Register page
+<img src="src/Screenshots/16.png" alt="register_page"/>
 
-## 3.screen - Dummy Error Message
-<img src="src/Screenshots/10.png" alt="view_process" width="1248" height="375"/>
+## 3. screen - Login page
+<img src="src/Screenshots/15.png" alt="login_page"/>
 
-## 3.screen - Post creation
-<img src="src/Screenshots/12.png" alt="dummy_error_message" width="1248" height="375"/>
+## 4. screen - Login page p2
+<img src="src/Screenshots/14.png" alt="login_page"/>
 
-## 4.screen - Privacy Page
-<img src="src/Screenshots/11.png" alt="privacy_page" width="1248" height="375"/>
+## 5. screen - Already logged in state
+<img src="src/Screenshots/17.png" alt="login_page"/>
+
+## 6. screen - Post view
+<img src="src/Screenshots/9.png" alt="post_creation" />
+
+## 7.screen - Dummy Error Message
+<img src="src/Screenshots/10.png" alt="view_process"/>
+
+## 8.screen - Post creation
+<img src="src/Screenshots/12.png" alt="dummy_error_message"/>
+
+## 9.screen - Privacy Page
+<img src="src/Screenshots/11.png" alt="privacy_page"/>
 
 
 
