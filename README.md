@@ -80,8 +80,8 @@ Before you begin, ensure you have the following installed on your machine:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/csabika98/PersonalBlogCsabaSallai.git
-    cd PersonalBlogCsabaSallai
+    git clone https://github.com/csabika98/PersonalBlog.git
+    cd PersonalBlog
     ```
 
 2. **Restore dependencies:**
