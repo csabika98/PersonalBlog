@@ -48,11 +48,13 @@
 <img src="src/Screenshots/18.png" alt="mongo_query"/>
 
 ## 11.screen - Search (ElasticSearch)
-<img src="src/Screenshots/19.png" alt="search_query"/>
+<img src="src/Screenshots/23.png" alt="search_query"/>
 
 ## 12.screen - ES - Index shard
 <img src="src/Screenshots/21.png" alt="search_query"/>
 
+## 13.screen - Search (ElasticSearch p2)
+<img src="src/Screenshots/22.png" alt="search_query"/>
 
 ## Summary
 

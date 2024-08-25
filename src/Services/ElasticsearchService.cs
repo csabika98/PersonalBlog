@@ -11,7 +11,7 @@ namespace PersonalBlogCsabaSallai.Services
         {
             _client = client;
         }
-                public async Task CreateIndexAsync()
+        public async Task CreateIndexAsync()
         {
             try
             {
@@ -20,9 +20,15 @@ namespace PersonalBlogCsabaSallai.Services
                         .Properties(p => p
                             .Text(t => t
                                 .Name(n => n.Title)
+                                .Fields(f => f
+                                    .Keyword(k => k.Name("keyword"))  // Add keyword subfield
+                                )
                             )
                             .Text(t => t
                                 .Name(n => n.Content)
+                                .Fields(f => f
+                                    .Keyword(k => k.Name("keyword"))  // Add keyword subfield
+                                )
                             )
                             .Date(d => d
                                 .Name(n => n.CreatedAt)
@@ -66,16 +72,21 @@ namespace PersonalBlogCsabaSallai.Services
             }
         }
 
-            public async Task<List<Post>> SearchPostsAsync(string query)
+                public async Task<List<Post>> SearchPostsAsync(string query)
         {
             var response = await _client.SearchAsync<Post>(s => s
                 .Index("posts")
                 .Query(q => q
-                    .MultiMatch(m => m
-                        .Query(query)
-                        .Fields(f => f
-                            .Field(p => p.Title)
-                            .Field(p => p.Content)
+                    .Bool(b => b
+                        .Should(
+                            bs => bs.Wildcard(c => c
+                                .Field(p => p.Title.Suffix("keyword"))  // Use keyword suffix to match exact term
+                                .Value($"*{query}*")
+                            ),
+                            bs => bs.Wildcard(c => c
+                                .Field(p => p.Content.Suffix("keyword"))  // Use keyword suffix to match exact term
+                                .Value($"*{query}*")
+                            )
                         )
                     )
                 )
