@@ -17,7 +17,7 @@
 ## Screenshots
 
 ## 1. screen - Welcome page
-<img src="src/Screenshots/6.png" alt="welcome_page" width="1350" height="175"/>
+<img src="src/Screenshots/7.png" alt="welcome_page" width="1350" height="175"/>
 
 ## 2. screen - Post creation
 <img src="src/Screenshots/1.png" alt="post_creation" width="1350" height="150"/>
