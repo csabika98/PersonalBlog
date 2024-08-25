@@ -20,19 +20,19 @@
 ## Screenshots
 
 ## 1. screen - Welcome page
-<img src="src/screenshots/2.png" alt="index_page" width="950" height="350"/>
+<img src="src/Screenshots/2.png" alt="index_page" width="950" height="350"/>
 
 ## 2. screen - Post creation
-<img src="src/screenshots/1.png" alt="submission" width="950" height="150"/>
+<img src="src/Screenshots/1.png" alt="submission" width="950" height="150"/>
 
 ## 3.screen - Post View process
-<img src="src/screenshots/5.png" alt="db_test" width="950" height="150"/>
+<img src="src/Screenshots/5.png" alt="db_test" width="950" height="150"/>
 
 ## 3.screen - Dummy Error Message
-<img src="src/screenshots/3.png" alt="api_test" width="950" height="150"/>
+<img src="src/Screenshots/3.png" alt="api_test" width="950" height="150"/>
 
 ## 4.screen - Privacy Page
-<img src="src/screenshots/4.png" alt="db_test" width="950" height="150"/>
+<img src="src/Screenshots/4.png" alt="db_test" width="950" height="150"/>
 
 
 
