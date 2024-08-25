@@ -17,19 +17,19 @@
 ## Screenshots
 
 ## 1. screen - Welcome page
-<img src="src/Screenshots/7.png" alt="welcome_page" width="1350" height="175"/>
+<img src="src/Screenshots/7.png" alt="welcome_page" width="1080" height="275"/>
 
 ## 2. screen - Post creation
-<img src="src/Screenshots/1.png" alt="post_creation" width="1350" height="150"/>
+<img src="src/Screenshots/1.png" alt="post_creation" width="1080" height="250"/>
 
 ## 3.screen - Post View process
-<img src="src/Screenshots/5.png" alt="view_process" width="1350" height="105"/>
+<img src="src/Screenshots/5.png" alt="view_process" width="1080" height="205"/>
 
 ## 3.screen - Dummy Error Message
-<img src="src/Screenshots/3.png" alt="dummy_error_message" width="1350" height="200"/>
+<img src="src/Screenshots/3.png" alt="dummy_error_message" width="1080" height="200"/>
 
 ## 4.screen - Privacy Page
-<img src="src/Screenshots/4.png" alt="privacy_page" width="1350" height="105"/>
+<img src="src/Screenshots/4.png" alt="privacy_page" width="1080" height="205"/>
 
 
 
