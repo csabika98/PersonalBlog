@@ -1,0 +1,23 @@
+@model IEnumerable<PersonalBlogCsabaSallai.Models.Post>
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2>Search Results</h2>
+
+@if (!Model.Any())
+{
+    <p>No results found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var post in Model)
+        {
+            <li>
+                <a asp-action="Details" asp-route-id="@post.Id">@post.Title</a>
+            </li>
+        }
+    </ul>
+}

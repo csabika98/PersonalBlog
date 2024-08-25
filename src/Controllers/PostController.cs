@@ -47,4 +47,17 @@ public class PostController : Controller
 
         return View(post);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> Search(string query)
+    {
+        if (string.IsNullOrWhiteSpace(query))
+        {
+            return View(new List<Post>());
+        }
+
+        var results = await _postService.SearchPostsAsync(query);
+        return View(results);
+    }
 }
+

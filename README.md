@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Screenshots](#screenshots)
+- [Summary](#Summary)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
@@ -46,7 +47,14 @@
 ## 10.screen - MongoDB Query about the registered user
 <img src="src/Screenshots/18.png" alt="mongo_query"/>
 
+## 11.screen - Search (ElasticSearch)
+<img src="src/Screenshots/19.png" alt="search_query"/>
 
+## 12.screen - ES - Index shard
+<img src="src/Screenshots/21.png" alt="search_query"/>
+
+
+## Summary
 
 **PersonalBlogCsabaSallai** is a modern, scalable personal blog application built with ASP.NET Core, MongoDB, and Elasticsearch. This project showcases how to create, manage, and search blog posts using the latest web technologies.
 
