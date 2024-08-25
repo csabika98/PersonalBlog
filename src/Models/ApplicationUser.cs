@@ -7,10 +7,12 @@ using Microsoft.AspNetCore.Identity;
 namespace PersonalBlogCsabaSallai.Models
 {
     public class ApplicationUser : IdentityUser
+    
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public override string Id { get; set; } = ObjectId.GenerateNewId().ToString();
+    /*
+       [BsonId]
+       [BsonRepresentation(BsonType.ObjectId)]
+       public override string Id { get; set; } = ObjectId.GenerateNewId().ToString();
 
         [BsonElement("UserName")]
         public override string? UserName { get; set; }
@@ -59,7 +61,8 @@ namespace PersonalBlogCsabaSallai.Models
 
         [BsonElement("Claims")]
         public List<ApplicationUserClaim> Claims { get; set; } = new List<ApplicationUserClaim>();
-    }
+    */
+    } 
 
     public class ApplicationUserClaim
     {

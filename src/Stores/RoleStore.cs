@@ -44,12 +44,7 @@ namespace PersonalBlogCsabaSallai.Stores
 
         public Task<string> GetRoleIdAsync(ApplicationRole role, CancellationToken cancellationToken)
         {
-            // Ensure that the Id is never null
-            if (role.Id == null)
-            {
-                throw new InvalidOperationException("Role Id cannot be null.");
-            }
-            return Task.FromResult(role.Id);
+            return Task.FromResult(role.Id);  // No need for null check as Id is always initialized
         }
 
         public Task<string?> GetRoleNameAsync(ApplicationRole role, CancellationToken cancellationToken)
