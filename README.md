@@ -20,7 +20,7 @@
 ## Screenshots
 
 ## 1. screen - Welcome page
-<img src="src/Screenshots/2.png" alt="index_page" width="950" height="350"/>
+<img src="src/Screenshots/2.png" alt="index_page" width="950" height="450"/>
 
 ## 2. screen - Post creation
 <img src="src/Screenshots/1.png" alt="submission" width="950" height="150"/>
