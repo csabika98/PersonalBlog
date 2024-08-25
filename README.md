@@ -32,16 +32,19 @@
 <img src="src/Screenshots/17.png" alt="login_page"/>
 
 ## 6. screen - Post view
-<img src="src/Screenshots/9.png" alt="post_creation" />
+<img src="src/Screenshots/9.png" alt="post_view" />
 
 ## 7.screen - Dummy Error Message
-<img src="src/Screenshots/10.png" alt="view_process"/>
+<img src="src/Screenshots/10.png" alt="dummy_error_message"/>
 
 ## 8.screen - Post creation
-<img src="src/Screenshots/12.png" alt="dummy_error_message"/>
+<img src="src/Screenshots/12.png" alt="post_creation"/>
 
 ## 9.screen - Privacy Page
 <img src="src/Screenshots/11.png" alt="privacy_page"/>
+
+## 10.screen - MongoDB Query about the registered user
+<img src="src/Screenshots/18.png" alt="mongo_query"/>
 
 
 
