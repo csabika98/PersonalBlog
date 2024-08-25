@@ -26,13 +26,13 @@
 <img src="src/Screenshots/1.png" alt="submission" width="950" height="150"/>
 
 ## 3.screen - Post View process
-<img src="src/Screenshots/5.png" alt="db_test" width="950" height="150"/>
+<img src="src/Screenshots/5.png" alt="db_test" width="950" height="350"/>
 
 ## 3.screen - Dummy Error Message
-<img src="src/Screenshots/3.png" alt="api_test" width="950" height="150"/>
+<img src="src/Screenshots/3.png" alt="api_test" width="950" height="350"/>
 
 ## 4.screen - Privacy Page
-<img src="src/Screenshots/4.png" alt="db_test" width="950" height="150"/>
+<img src="src/Screenshots/4.png" alt="db_test" width="950" height="350"/>
 
 
 
