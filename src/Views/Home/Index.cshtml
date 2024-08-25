@@ -1,9 +1,41 @@
-﻿@{
+﻿@model IEnumerable<PersonalBlogCsabaSallai.Models.Post>
+
+@{
     ViewData["Title"] = "Home page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>To my personal blog, hope you will enjoy the staying here</p></a>.</p>
+    <p>To my personal blog, hope you will enjoy your stay here.</p>
 </div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var post in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">@post.Title</h5>
+                        <p class="card-text">
+                            @if(post.Content.Length > 100)
+                            {
+                                @post.Content.Substring(0, 100).Trim()
+                            }
+                            else
+                            {
+                                @post.Content
+                            }
+                        </p>
+                        <a href="@Url.Action("Details", "Post", new { id = post.Id })" class="btn btn-primary">View</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on @post.CreatedAt.ToString("MMMM dd, yyyy")
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
 

@@ -1,7 +1,6 @@
 using MongoDB.Driver;
 using PersonalBlogCsabaSallai.Models;
 
-
 namespace PersonalBlogCsabaSallai.Services
 {
     public class PostService
@@ -37,5 +36,15 @@ namespace PersonalBlogCsabaSallai.Services
         {
             await _posts.DeleteOneAsync(post => post.Id == id);
         }
+
+        // Method to get the latest posts, sorted by the CreatedAt field
+        public async Task<List<Post>> GetLatestPostsAsync(int count = 5)
+        {
+            return await _posts.Find(post => true)
+                               .SortByDescending(post => post.CreatedAt)
+                               .Limit(count)
+                               .ToListAsync();
+        }
     }
 }
+
