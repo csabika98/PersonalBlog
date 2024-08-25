@@ -1,0 +1,17 @@
+@model PersonalBlogCsabaSallai.Models.Post
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<h2>@Model.Title</h2>
+
+<p>@Model.CreatedAt.ToString("g")</p>
+
+<div>
+    @Model.Content
+</div>
+
+<p>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</p>

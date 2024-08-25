@@ -1,0 +1,33 @@
+@model IEnumerable<PersonalBlogCsabaSallai.Models.Post>
+
+@{
+    ViewData["Title"] = "Blog Posts";
+}
+
+<h2>Blog Posts</h2>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Add New Post</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Created At</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.Title</td>
+                <td>@post.CreatedAt.ToString("g")</td>
+                <td>
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@post.Id">View</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

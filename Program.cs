@@ -2,8 +2,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<ViewLocatorService>();
+builder.Services.AddSingleton<PersonalBlogCsabaSallai.Services.ViewLocatorService>();
+builder.Services.AddSingleton<PersonalBlogCsabaSallai.Services.MongoDbContext>();
+builder.Services.AddSingleton<PersonalBlogCsabaSallai.Services.PostService>();
 
 var app = builder.Build();
 

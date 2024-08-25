@@ -1,4 +1,5 @@
-﻿@inject ViewLocatorService ViewLocatorService
+﻿@using PersonalBlogCsabaSallai.Services
+@inject ViewLocatorService ViewLocatorService
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +24,9 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Post" asp-action="Index">Blog Posts</a>
                         </li>
                         @foreach (var viewName in ViewLocatorService.GetViewNames("Home"))
                         {

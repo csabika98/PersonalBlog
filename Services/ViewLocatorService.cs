@@ -1,23 +1,27 @@
-public class ViewLocatorService
+
+namespace PersonalBlogCsabaSallai.Services
 {
-    private readonly IWebHostEnvironment _environment;
-
-    public ViewLocatorService(IWebHostEnvironment environment)
+    public class ViewLocatorService
     {
-        _environment = environment;
-    }
+        private readonly IWebHostEnvironment _environment;
 
-    public IEnumerable<string> GetViewNames(string controllerName)
-    {
-        var viewsPath = Path.Combine(_environment.ContentRootPath, "Views", controllerName);
-        if (!Directory.Exists(viewsPath))
+        public ViewLocatorService(IWebHostEnvironment environment)
         {
-            yield break;
+            _environment = environment;
         }
 
-        foreach (var file in Directory.GetFiles(viewsPath, "*.cshtml"))
+        public IEnumerable<string> GetViewNames(string controllerName)
         {
-            yield return Path.GetFileNameWithoutExtension(file);
+            var viewsPath = Path.Combine(_environment.ContentRootPath, "Views", controllerName);
+            if (!Directory.Exists(viewsPath))
+            {
+                yield break;
+            }
+
+            foreach (var file in Directory.GetFiles(viewsPath, "*.cshtml"))
+            {
+                yield return Path.GetFileNameWithoutExtension(file);
+            }
         }
     }
 }
