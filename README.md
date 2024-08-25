@@ -13,9 +13,6 @@
   - [Viewing Blog Posts](#viewing-blog-posts)
   - [Searching Blog Posts](#searching-blog-posts)
 - [Project Structure](#project-structure)
-- [Docker Setup](#docker-setup)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Screenshots
 
