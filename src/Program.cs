@@ -5,6 +5,17 @@ using Nest;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Kestrel configuration
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.Listen(System.Net.IPAddress.Any, 5085, listenOptions => // Bind to port 5085
+    //serverOptions.Listen(System.Net.IPAddress.Any, 7022, listenOptions =>
+    {
+        global::System.Object listenOptions1 = listenOptions; // HTTPS on port 7022
+    });
+});
+
+
 // Elasticsearch setup
 var settings = new ConnectionSettings(new Uri("http://localhost:9200"))
     .DefaultIndex("posts");
